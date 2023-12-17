@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 .cards-stock {
     width: 1820px;
