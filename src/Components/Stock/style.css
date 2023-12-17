@@ -1,0 +1,42 @@
+#container-stock {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards-stock {
+    width: 1820px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.cards-stock img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cards-stock .img {
+    width: 120px;
+}
+.cards-stock div {
+    margin: 5px;
+}
+
+.stock-title, .stock-category{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.stock-stock, .stock-price, .stock-price-total, .stock-discountPercentage{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
