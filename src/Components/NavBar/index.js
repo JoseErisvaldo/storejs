@@ -1,18 +1,32 @@
 import { Link } from "react-router-dom"
+import "./style.css"
+import api from "../../Services/Apis"
+import { useEffect, useState } from "react"
+
+
 function NavBar () {
+    const [category, setCategory] = useState([])
+
+    useEffect(() => {
+
+        async function LoadingCategory () {
+            await api.get('/products/categories')
+            .then((response) => {
+                setCategory(response.data)
+            })
+        }
+        LoadingCategory ()
+
+    }, [])
     return (
-        <div>
+        <div className="container-nav-bar">
             <ul>
-                <li>
-                    <Link to={"/"}> Eletroportáteis </Link>
-                </li>   
-                <li>
-                    <Link to={"/"}> Telefonia </Link>
-                </li>     
-                <li>
-                    <Link to={"/"}> Jardim </Link>
-                </li> 
-            </ul>
+                {category.map((item) => (
+                    <li>
+                        <Link className="link" to={"/"}> {item} </Link>
+                    </li>  
+                ))} 
+            </ul>  
         </div>
     )
 }

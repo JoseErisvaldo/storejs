@@ -1,0 +1,26 @@
+.container-nav-bar {
+    max-width: 1920px;
+    overflow-x: scroll;
+    height: auto;
+}
+.container-nav-bar::-webkit-scrollbar {
+    background-color: white;
+} 
+  
+.container-nav-bar ul {
+    white-space: nowrap;
+}
+  
+.container-nav-bar ul li {
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+}
+.link {
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px;
+    padding: 15px;
+}
+  
