@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import api from "../../Services/Apis"
 import './style.css'
+import { Link } from "react-router-dom"
 function Catalogo () {
 
     const [catalogo, setCatalogo] = useState([])
@@ -42,6 +43,7 @@ function Catalogo () {
                         <div className=""><i class='bx bx-cart-download'></i></div>
                         <div className=""><i class='bx bxs-heart'></i></div>
                         <div className=""><i class='bx bxs-send' ></i></div>
+                        <div><Link to={`/detalhesProducts/${lista.id}`}>Ver mais</Link></div>
                     </div>
                 </div>
             )
