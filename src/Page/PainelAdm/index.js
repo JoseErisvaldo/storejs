@@ -5,9 +5,7 @@ function PainelAdm () {
     return(
         <div>
             
-            <Search/>
             <h1>Painel Administrativo</h1>
-            <Stock/>
 
         </div>
     )
