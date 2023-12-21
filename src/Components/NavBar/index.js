@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import "./style.css"
 import api from "../../Services/Apis"
 import { useEffect, useState } from "react"
+
 
 
 function NavBar () {
@@ -16,14 +17,13 @@ function NavBar () {
             })
         }
         LoadingCategory ()
-
     }, [])
     return (
         <div className="container-nav-bar">
             <ul>
                 {category.map((item) => (
                     <li>
-                        <Link className="link" to={"/"}> {item} </Link>
+                        <Link className="link" to={`/categorias/${item}`}> {item} </Link>
                     </li>  
                 ))} 
             </ul>  
