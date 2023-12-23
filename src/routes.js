@@ -5,6 +5,8 @@ import DetalhesProducts from "./page/DetalhesProducts"
 import Search from "./Components/Search"
 import Categorias from "./page/Categorias"
 import Favoritos from "./page/Favoritos"
+import MyOrder from "./page/MyOrder"
+import Destaque from "./Components/Destaque"
 
 function RoutesApp () {
     return(
@@ -16,7 +18,8 @@ function RoutesApp () {
                 <Route path="/detalhesProducts/:id" element={<DetalhesProducts/>} />
                 <Route path="/categorias/:categoria" element={<Categorias/>} />
                 <Route path="/favoritos" element={<Favoritos/>} />
-
+                <Route path="/meuspedidos" element={<MyOrder/>} />
+                <Route path="/Destaque" element={<Destaque/>} />
 
             </Routes>
 

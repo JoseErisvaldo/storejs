@@ -10,7 +10,7 @@ function Favoritos () {
         let res = JSON.parse(myList) || []
         setList(res)
     }, [])
-    console.log(ListFavoritos)
+
     
     function excluir (id) {
         let filtroList = ListFavoritos.filter((item) => {
@@ -43,12 +43,11 @@ function Favoritos () {
                     </div>
                     <div className="stock">Quantidade disponivel: {lista.stock}</div>
                     <div className="box-icons">
-                        <div className=""><i class='bx bx-cart-download'></i></div>
-                        <div className="" onClick={() => excluir(lista.id) } >Excluir</div>
-                        <div className=""><i class='bx bxs-send' ></i></div>
+                        <div className=""><Link className="ver-mais" to={`/detalhesProducts/${lista.id}`}><i class='bx bx-cart-download'></i> </Link></div>
+                        <div className="" onClick={() => excluir(lista.id) } ><i class='bx bxs-message-alt-x'></i></div>
 
-                        <div><Link to={`/detalhesProducts/${lista.id}`}>Ver mais</Link></div>
                     </div>
+                    <div></div>
                 </div>
             ))}
         </div>

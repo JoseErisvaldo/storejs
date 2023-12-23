@@ -5,6 +5,11 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+.ver-mais {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
 .cards-catalogo{
     margin: 15px;
     width: 320px;

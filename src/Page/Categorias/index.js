@@ -28,10 +28,11 @@ function Categorias () {
     return(
         <div>
             <NavBar/>
-            <div>Categorias </div>
+            <div> <h1>Categorias</h1></div>
                 <div id="container-catalogo">
                 {res.map((lista) => {
                 return(
+                    <Link className="ver-mais" to={`/detalhesProducts/${lista.id}`}>
                     <div className="cards-catalogo" key={lista.id}>
                         <div><img src={lista.thumbnail}class="img" alt="{lista.title}"/>
                         </div>
@@ -46,14 +47,9 @@ function Categorias () {
                             </div>
                         </div>
                         <div className="stock">Quantidade disponivel: {lista.stock}</div>
-                        <div className="box-icons">
-                            <div className=""><i class='bx bx-cart-download'></i></div>
-                            <div className=""><i class='bx bxs-heart'></i></div>
-                            <div className=""><i class='bx bxs-send' ></i></div>
-
-                            <div><Link to={`/detalhesProducts/${lista.id}`}>Ver mais</Link></div>
-                        </div>
+                        
                     </div>
+                    </Link>
                     )
                 })}
             </div>
