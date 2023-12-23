@@ -1,0 +1,38 @@
+#container-clientes {
+    max-width: 1220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    margin-left: 10px;
+
+}
+
+.table {
+    /* Removido width: 720px; */
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    margin-left: 350px;
+}
+
+.table thead tr {
+    background-color: rgb(226, 226, 226);
+}
+
+.table thead tr th {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    padding: 5px;
+}
+
+.table tbody tr td {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    padding: 5px;
+    width: 200px;
+}
+
+.table tbody tr td img {
+    width: 100%;
+    object-fit: contain;
+}

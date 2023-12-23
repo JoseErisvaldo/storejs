@@ -7,6 +7,9 @@ import Categorias from "./page/Categorias"
 import Favoritos from "./page/Favoritos"
 import MyOrder from "./page/MyOrder"
 import Destaque from "./Components/Destaque"
+import DetalhesCliente from "./page/DetalhesCliente"
+
+
 
 function RoutesApp () {
     return(
@@ -20,6 +23,8 @@ function RoutesApp () {
                 <Route path="/favoritos" element={<Favoritos/>} />
                 <Route path="/meuspedidos" element={<MyOrder/>} />
                 <Route path="/Destaque" element={<Destaque/>} />
+                <Route path="/detalhescliente/:id" element={<DetalhesCliente/>} />
+
 
             </Routes>
 

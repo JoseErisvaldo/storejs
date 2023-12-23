@@ -1,0 +1,19 @@
+
+.nav-gestao ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+}
+.nav-gestao ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nav-gestao ul li:hover {
+    color: white;
+    background-color: rgba(0, 68, 255, 0.44);
+}
