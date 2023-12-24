@@ -4,6 +4,7 @@ import Destaque from '../../Components/Destaque'
 function Inicio() {
   return (
     <div className="container'">
+      <NavBar />
       <Destaque />
       <Catalogo />
     </div>
